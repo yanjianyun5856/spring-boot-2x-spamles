@@ -1,0 +1,3 @@
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+yjy.spring.boot.samples.autoconfigure.FormatterAutoConfiguration
