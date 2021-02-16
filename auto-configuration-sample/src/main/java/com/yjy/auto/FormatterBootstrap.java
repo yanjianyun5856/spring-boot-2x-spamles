@@ -15,6 +15,7 @@ public class FormatterBootstrap {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(FormatterBootstrap.class)
                 .web(WebApplicationType.NONE)
+                //.properties("formatter.enabled=true")
                 .run(args);
 
         //待格式化对象
