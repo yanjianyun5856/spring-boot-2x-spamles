@@ -21,7 +21,7 @@ public class FormatterBootstrap {
         data.put("name", "yjy");
         //获取 Formatter， 来自 FormatterAutoConfiguration
         Formatter formatter = context.getBean(Formatter.class);
-        System.out.printf("formatter.format(date:%s) \n",formatter.format(data));
+        System.out.printf("%s.format(date:%s) \n",formatter.getClass().getSimpleName(),formatter.format(data));
 
         context.close();
     }
